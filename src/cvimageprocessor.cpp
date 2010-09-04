@@ -122,7 +122,7 @@ bool CVImageProcessor::load_haar_cascade()
     QFileInfo cascade_path_rel(this->haar_cascade_name);
     qDebug()<<cascade_path_rel.canonicalFilePath();
     std::string cascade_path = "./" + this->haar_cascade_name.toStdString();
-    this->haar_cascade = (CvHaarClassifierCascade*) cvLoad(cascade_path.c_str());//"/Users/nickzaillian/Dropbox/Projects/Stache2/resources/haarcascade_frontalface_default.xml", 0, 0, 0 );
+    this->haar_cascade = (CvHaarClassifierCascade*) cvLoad(cascade_path.c_str(), 0, 0, 0);
 
     /*return false if haar_cascade failed to load*/
     if (!this->haar_cascade)
