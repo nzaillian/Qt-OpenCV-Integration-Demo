@@ -6,7 +6,7 @@
 
 QT += core gui
 
-TARGET = OpenCV-Qt-Integration-Demo
+TARGET = OpenCV Qt Integration Demo
 TEMPLATE = app
 INCLUDEPATH += /opt/local/include/opencv
 LIBS += -L/opt/local/lib -lcvaux -lcv -lhighgui -lcxcore
@@ -27,3 +27,5 @@ HEADERS  += src/toplevelwindow.h src/cvutil.h src/cvwidget.h src/cvimage.h \
 
 FORMS    += src/toplevelwindow.ui
 RESOURCES += resources.qrc
+ICON = resources/z_black_on_white.icns
+
