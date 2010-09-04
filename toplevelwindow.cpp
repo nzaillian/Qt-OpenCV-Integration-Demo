@@ -1,6 +1,9 @@
 #include "toplevelwindow.h"
 #include "ui_toplevelwindow.h"
 
+/*
+Main display window.
+*/
 ToplevelWindow::ToplevelWindow(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ToplevelWindow)

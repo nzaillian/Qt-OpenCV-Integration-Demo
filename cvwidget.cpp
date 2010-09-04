@@ -2,6 +2,8 @@
 
 #define DEFAULT_FRAMERATE 29.0
 
+/*Widget manages a CVImage and CVLabel.  Refreshes image whenever it receives a current_frame_updated() signal from the CVImageProcessor in the image processing thread*/
+
 CVWidget::CVWidget(QWidget *parent) :
         QWidget(parent)
 {
@@ -93,8 +95,6 @@ void CVWidget::display_current_frame()
         	this->image_display_area->set_cur_image_pixmap(QPixmap::fromImage(this->shared_cv_image->q_image));
         	this->image_display_area->setPixmap(QPixmap::fromImage(this->shared_cv_image->q_image));
         mutex->unlock();
-        //this->image_display_area->update();
-
 }
 
 bool CVWidget::set_haar_cascade(QString cascade_name)

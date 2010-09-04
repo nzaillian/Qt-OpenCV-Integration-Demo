@@ -2,9 +2,9 @@
    Note: thanks to Umanga for IplImage/QImage conversion functions.
    see: http://umanga.wordpress.com/2010/04/19/how-to-covert-qt-qimage-into-opencv-iplimage-and-wise-versa.
 
-    There are a lot of gotchas to working with OpenCV library functions, including certain subtleties relating
-    to struct/object allocation/ownership.  Make sure that you only clean up after objects for which you are responsible,
-    otherwise you will be looking at a lot of "object being freed was not allocated"-type errs.
+   There are a lot of gotchas to working with OpenCV library functions, including certain subtleties relating
+   to struct/object allocation/ownership.  Make sure that you only clean up after objects for which you are responsible,
+   otherwise you will be looking at a lot of "object being freed was not allocated"-type errs.
 
 */
 

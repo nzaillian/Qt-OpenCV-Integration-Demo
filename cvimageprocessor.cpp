@@ -1,8 +1,8 @@
 #define DEFAULT_FRAMERATE 29.0
 #define DEFAULT_HAAR_CASCADE_RESOURCE_PATH ":/resources/haarcascade_frontalface_default.xml"
 #define DEFAULT_HAAR_CASCADE_FILE_NAME "haarcascade_frontalface_default_file.xml"
-#define DEFAULT_X_DEVIATION_THRESHOLD 400
-#define DEFAULT_Y_DEVIATION_THRESHOLD 400
+#define DEFAULT_X_DEVIATION_THRESHOLD 190
+#define DEFAULT_Y_DEVIATION_THRESHOLD 190
 
 #include "cvimageprocessor.h"
 

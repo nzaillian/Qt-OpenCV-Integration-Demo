@@ -9,7 +9,7 @@
 #include<cvaux.h>
 #include <cxcore.h>
 
-/*!
+/*
 Class contains utility functions for converting IplImage objects to QImage objects and vice-versa.
 (plus a simple function to convert a binary resource to a local file -- used, in this program, to write haar cacade XML
 files bundled up as binaries back into local XML files, so that they can be passed into OpenCV library functions that 

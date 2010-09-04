@@ -1,5 +1,8 @@
 #include "imageprocessingthread.h"
 
+/*Class'run method instantiates a CVImageProcessing object and begins its own 
+event loop.*/
+
 ImageProcessingThread::ImageProcessingThread(CVImage *shared_cv_image, QMutex *mutex, QObject *parent) :
     QThread(parent)
 {
