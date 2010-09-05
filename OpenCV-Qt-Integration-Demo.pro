@@ -6,8 +6,10 @@
 
 QT += core gui
 
-TARGET = OpenCV Qt Integration Demo
+TARGET = OpenCV\ Qt\ Integration\ Demo
 TEMPLATE = app
+CONFIG += static
+DEFINES += STATIC
 INCLUDEPATH += /opt/local/include/opencv
 LIBS += -L/opt/local/lib -lcvaux -lcv -lhighgui -lcxcore
 SOURCES += src/main.cpp\
