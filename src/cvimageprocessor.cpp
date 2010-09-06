@@ -97,7 +97,7 @@ void CVImageProcessor::capture_frame()
     if (!this->face_locations.isEmpty())
     {
 		/*write coords to terminal*/
-        qDebug()<<"face coords: x="<<this->face_locations.at(0).x()<<"   y: "<<this->face_locations.at(0).y();
+        qDebug()<<"face coords: x="<<this->face_locations.at(0).x()<<"   y="<<this->face_locations.at(0).y();
     }
 
     emit current_frame_updated();
